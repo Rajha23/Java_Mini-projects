@@ -16,7 +16,7 @@ public class BalanceCheck {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bankdb",
 	                "root",
-	                "Thejuswini@2006");
+	                "root");
 			String sql =  "SELECT holder_name, balance FROM accounts WHERE acc_no = ?";
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setInt(1,accNo);
@@ -40,3 +40,4 @@ sc.close();
 	}
 
 }
+
