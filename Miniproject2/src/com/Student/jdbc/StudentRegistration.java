@@ -20,7 +20,7 @@ public class StudentRegistration {
 		            Connection con = DriverManager.getConnection(
 		                "jdbc:mysql://localhost:3306/student",
 		                "root",
-		                "Thejuswini@2006"
+		                "root"
 		            );
 
 		            // 3. Read student details
@@ -63,5 +63,6 @@ public class StudentRegistration {
 		
 
 	}
+
 
 
