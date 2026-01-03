@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Simple Interest Calculator</title>
+</head>
+<body>
+<h2>Simple Interest Calculator</h2>
+ <form action="SimpleInterestServlet" method="post">
+        Principal (P):
+        <input type="number" name="p" required><br><br>
+
+        Rate of Interest (R):
+        <input type="number" name="r" step="0.01" required><br><br>
+
+        Time (T in years):
+        <input type="number" name="t" required><br><br>
+
+        <input type="submit" value="Calculate SI">
+    </form>
+</body>
+</html>
