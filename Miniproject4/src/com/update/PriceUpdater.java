@@ -15,7 +15,7 @@ public class PriceUpdater {
 		double price = sc.nextDouble();
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/pricedb","root","Thejuswini@2006");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/pricedb","root","root");
 			String sql = "UPDATE products SET price = ? WHERE id = ?";
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setDouble(1, price);
@@ -35,3 +35,4 @@ public class PriceUpdater {
 		sc.close();
 	}
 }
+
