@@ -15,7 +15,7 @@ System.out.print("Enter Employee ID: ");
 int empId = sc.nextInt();
 String url = "jdbc:mysql://localhost:3306/company", 
 user = "root", 
-password = "Thejuswini@2006";
+password = "root";
 String query = "SELECT name, salary FROM employees WHERE emp_id = ?";
 try {
 	Class.forName("com.mysql.cj.jdbc.Driver");
@@ -39,3 +39,4 @@ try {
 sc.close();	}
 
 }
+
